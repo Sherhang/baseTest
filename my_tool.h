@@ -1,11 +1,27 @@
+/*@2940563940@qq.com
+ **/
 #pragma once
 #include <iostream>
 #include <sstream>
 #include <bitset>
+
+//宏定义
+#define DEBUG  cout<<__DATE__<<" "<<__TIME__<<" "<<__FILE__<<" "<<__func__<<" "<<__LINE__<<": "
+#define Connect(x,y) x##y //连接xy,demo:int n = Connect(123,456);//n=123456;string str= Connect(123.abc);
+#define ToString(x) #x  //给x加上双引号,没什么用
+#define MEM_B( x ) ( *( (char *) (x) ) )   //得到指定地址上的一个字节长度的元素 
+#define UPCASE( c ) ( ((c) >= 'a' && (c) <= 'z') ? ((c) - 0x20) : (c) )//小写字母转大写
+#define LOWCASE( c ) ( ((c) >= 'A' && (c) <= 'Z') ? ((c) + 0x20) : (c) )//大写字母转小写
+#define INC_SAT( val ) (val = ((val)+1 > (val)) ? (val)+1 : (val))  //防止溢出
+#define OFFSETOF(type, field) ((size_t)&(((type *)0)->field)) //得到一个field在结构体中的偏移量，demo:int l=OFFSET(A,a);
+#define FSIZ( type, field ) sizeof( ((type *) 0)->field ) //得到一个结构体中field的字节数
+//#define ARR_SIZE(a) (sizeof((a)) / sizeof((a[0]))) //返回数组长度, 有问题TODO
+
 using namespace std;
 
 namespace myTool
 {
+    //数字转字符串
     //demo: int a = str2num<int>(string("-01.23"));
     template<class T>
     T str2num(const string& str)

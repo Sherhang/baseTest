@@ -13,7 +13,7 @@ all:$(target)
 
 $(target):%:%.cpp   	#用模式规则对每个独立的目标进行编译
 	$(CXX) $(INCS) $(CFLAGS) $^ -o $@ $(LIBS)
-%.o:%.cpp 
+%.o:%.cpp  head
 	$(CXX) $(INCS) $(CFLAGS) -c $^ -o $@ $(LIBS)
 
 .PHONY:all clean
