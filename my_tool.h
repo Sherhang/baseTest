@@ -37,9 +37,6 @@ namespace myTool
         stringstream ss;
         switch (format_in)
         {
-            case 10:
-                ss << str_in;
-                break;
             case 16:
                 ss << hex << str_in;
                 break;
@@ -65,9 +62,6 @@ namespace myTool
         stringstream ss1;
         switch (format_out)
         {
-            case 10:
-                ss1 << a;
-                break;
             case 16:
                 ss1 << hex << a;
                 break;
