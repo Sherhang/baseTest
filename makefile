@@ -1,5 +1,4 @@
-CXX = g++
-
+CXX = g++ -std=c++11
 src = $(wildcard *.cpp)
 head = $(wildcard *.h)
 obj = $(src:%.cpp=%.o) #get all .h with the same name of .cpp 
