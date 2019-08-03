@@ -1,5 +1,6 @@
 /*@2940563940@qq.com
  **/
+//commonTool.h
 #pragma once
 #include <iostream>
 #include <sstream>
@@ -22,7 +23,7 @@
 
 using namespace std;
 
-namespace myTool
+namespace commonTool
 {
     //数字转字符串
     //demo: int a = str2num<int>(string("-01.23"));

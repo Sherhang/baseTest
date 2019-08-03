@@ -3,7 +3,7 @@
 #include<iostream>
 #include<sstream>
 #include<vector>
-#include"my_tool.h"
+#include"common_tool.h"
 using namespace std;
 
 bool makedir(const std::string& dir)

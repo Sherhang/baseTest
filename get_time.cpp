@@ -2,10 +2,10 @@
 #include<time.h>//struct tm
 
 #include<iostream>
-#include"my_tool.h"
+#include"common_tool.h"
 //#define DEBUG cout<<__func__<<"|"<<__LINE__<<"|"
 using namespace std;
-using namespace myTool;
+using namespace commonTool;
 string get_curr_time()
 {
     struct timeval tv;

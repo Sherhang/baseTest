@@ -1,8 +1,7 @@
 #include <iostream>
-#include "my_tool.h"
-#include "my_tool.h"
+#include "common_tool.h"
 using namespace std;
-using namespace myTool;
+using namespace commonTool;
 
 int main()
 {
