@@ -4,9 +4,12 @@
 #include <iostream>
 #include <sstream>
 #include <bitset>
+#include <sys/time.h>    //struct itimerval, setitimer()
 
 //宏定义
-#define DEBUG  cout<<__DATE__<<" "<<__TIME__<<" "<<__FILE__<<" "<<__func__<<" "<<__LINE__<<": "
+#define DEBUG  cout<<"[DEBUG]"<<__DATE__<<"|"<<__TIME__<<"|"<<__FILE__<<"|"<<__func__<<"|"<<__LINE__<<": "
+#define ERROR  cout<<"[ERROR]"<<__DATE__<<"|"<<__TIME__<<"|"<<__FILE__<<"|"<<__func__<<"|"<<__LINE__<<": "
+
 #define Connect(x,y) x##y //连接xy,demo:int n = Connect(123,456);//n=123456;string str= Connect(123.abc);
 #define ToString(x) #x  //给x加上双引号,没什么用
 #define MEM_B( x ) ( *( (char *) (x) ) )   //得到指定地址上的一个字节长度的元素 

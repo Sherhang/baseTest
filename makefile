@@ -19,4 +19,4 @@ $(target):%:%.cpp   	#用模式规则对每个独立的目标进行编译
 .PHONY:all clean
 clean:
 	@echo "clean all .o and exe: "
-	rm -rf  $(obj) $(target)
+	rm -rf  $(obj) $(target) log/

@@ -26,7 +26,7 @@ int main()
     }
     {
         cout<<"m2n测试："<<endl;
-        string s1 ="20";
+        string s1 ="2147483647";
         string s2 = "001010";    
         cout <<"10--->16 "<<  m2n(s1, 10, 16) <<endl;
         cout <<"10--->8 " << m2n(s1, 10, 8) <<endl;
@@ -36,5 +36,8 @@ int main()
         cout <<s1<< " 16--->10 " << m2n(s1, 16, 10) <<endl;
         cout <<s1<< " 8--->2 " << m2n(s1, 8, 2) <<endl;
         cout <<s1<< " 8--->10 " << m2n(s1, 8, 10) <<endl;
+        cout <<s1<< " 10--->16 " << m2n(s1, 10, 16) <<endl;
+        cout<<hex<<str2num<int32_t>(s1)<<endl;
+
     }
 }
